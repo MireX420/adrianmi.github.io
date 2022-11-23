@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+
+    <link rel="stylesheet" href="font/css/fontawesome.css">
+    <link rel="stylesheet" href="font/css/brands.css">
+    <link rel="stylesheet" href="font/css/solid.css">
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/x-icon" href="bildebank/logo.jpg">
+    <!--a href="https://www.w3schools.com/html/html_favicon.asp"-->
+    <title>Kontakt oss</title>
+
+     <!--Facebook Cards-->
+     <meta property="og:title" content="SmartCoding.no" />
+     <meta property="og:type" content="article">
+     <meta property="og:url" content="https://itstud.hiof.no/~adrianmi/Deleksamen-3/" />
+     <meta property="og:description" content="Dette er kontaktsiden til SmartCoding.no!" />
+     <meta property="og:image" content="https://itstud.hiof.no/~adrianmi/Deleksamen-3/bildebank/logo.webp">
+     <meta property="og:image:alt" content="bilde av logo" />
+ 
+     <!--Twitter Cards-->
+     <meta name="twitter:title" content="SmartCoding.no">
+     <meta name="twitter:card" content="summary" />
+     <meta name="twitter:url" content="https://itstud.hiof.no/~adrianmi/Deleksamen-3/">
+     <meta name="twitter:description" content="Dette er kontaktsiden til SmartCoding.no!">
+     <meta name="twitter:image" content="https://itstud.hiof.no/~adrianmi/Deleksamen-3/bildebank/logo.webp">
+     <!--https://developers.facebook.com/docs/sharing/webmasters-->
+    <!--https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/markup-->
+</head>
+<body>
+    <div id="grid-container">
+        <header>
+            <img id="head-img" src="bildebank/header.jpg" alt="bilde">
+            <h2>Kontakt oss</h2>
+            <nav>  
+                <h1><a href="index.html"><img src="bildebank/logo.jpg" alt="bilde av logo"></a></h1>  
+                <!--<a href="https://www.vecteezy.com/free-vector/coding-logo">Coding Logo Vectors by Vecteezy</a>-->      
+                <!--https://www.w3schools.com/howto/howto_js_mobile_navbar.asp-->
+                <div class="hamburger-menu">
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa-solid fa-bars"></i></a>               
+                </div>
+                <ul id="main-menu">
+                    <li><a href="index.html"><i class="fa-solid fa-house"></i> Hjem</a></li>
+                    <li><a href="uu-vs-seo.html"><i class="fa-solid fa-code"></i> UU vs SEO</a></li>
+                    <li><a href="cms.html"><i class="fa-solid fa-desktop"></i> CMS</a></li>
+                    <li><a href="analyse.html"><i class="fa-solid fa-chart-line"></i> Analyse</a></li>
+                    <li><a href="kontakt-oss.html"><i class="fa-solid fa-phone"></i> Kontakt oss</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="contact-site">
+            <section id="contact-site-grid">
+                <div id="info">
+                    <h1 class="title"><i class="fa-solid fa-location-pin"></i> Postadresse:<br></h1>
+                    <h1 class="info-content">Høgskolen i Østfold<br>
+                        Postboks 700<br>
+                        NO-1757 Halden<br>
+                        Norway<br></h1>
+                    <h1 class="title"><i class="fa-solid fa-box"></i> Postpakkeadresse:<br></h1>
+                    <h1 class="info-content">Høgskolen i Østfold<br>
+                        B R A veien 4<br>
+                        NO-1757 Halden<br>
+                        Norway<br></h1>
+                    <h1 class="title"><i class="fa-solid fa-phone"></i> Kontakt:<br></h1> 
+                    <h1 class="info-content">Sentralbord: 69 60 80 00<br>
+                        postmottak@hiof.no<br>
+                        Faks: 69 60 80 01</h1>
+                </div>
+                <div id="contact-form">
+                    <form action="made-up.php">
+
+                        <label for="navn">Fullt Navn  *</label><br>
+                        <input type="text" id="navn" name="navn" placeholder=""><br><br>
+
+                        <label for="epost">Epost  *</label><br>
+                        <input type="email" id="epost" name="epost" placeholder=""><br><br>
+                    
+                        <label for="emne">Melding  *</label><br>
+                        <textarea id="emne" name="emne" placeholder="" style="height:180px"  ></textarea><br><br>
+                    
+                        <input id="submit" type="submit" value="Send">
+                    </form>       
+                    <!--<a href="https://www.w3schools.com/howto/howto_css_contact_form.asp>"-->  
+                </div>
+                <div id="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.188276120803!2d11.350614616148391!3d59.129250234090634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f0d344246f%3A0x4e47f19c99b253b1!2zSMO4Z3Nrb2xlbiBpIMOYc3Rmb2xk!5e0!3m2!1sno!2sno!4v1667908131505!5m2!1sno!2sno" width="480" height="480" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <!--<a href="https://www.google.com/search?q=html+how+to+add+a+map&sxsrf=ALiCzsbpl9mSmKFcCoXNjnZCHmoA2EvbsQ:1667907899994&source=lnms&tbm=vid&sa=X&ved=2ahUKEwiYq5aPwZ77AhXipYsKHUazAWUQ_AUoAnoECAIQBA&biw=1920&bih=937&dpr=1#fpstate=ive&vld=cid:f86dd038,vid:KIC0OK9nKXY">-->
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="socials-links">
+                <a href="https://www.instagram.com/adrianmirek.03/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100011207858650"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/Adrian73367378"><i class="fa-brands fa-twitter"></i></a>
+                <a href="mailto:adrianmi@hiof.no"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://no.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+                <a href="https://discord.gg/53Zqqcfp"><i class="fa-brands fa-discord"></i></a>
+                <a href="https://no.pinterest.com/"><i class="fa-brands fa-square-pinterest"></i></a>
+                <iframe class="facebook-share" src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fitstud.hiof.no%2F~adrianmi%2FDeleksamen-4%2Fuu-vs-seo.html&layout=button_count&size=small&width=77&height=20&appId" width="77" height="20" style="border:none;overflow:hidden" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    <!--https://www.wikihow.com/Create-an-Email-Link-in-HTML-->
+                    <!--https://developers.facebook.com/docs/plugins/share-button/-->
+                    <!--https://publish.twitter.com/#-->
+                    <!--https://developers.facebook.com/docs/plugins/share-button/-->
+            <!--https://www.wikihow.com/Create-an-Email-Link-in-HTML-->
+            <!--https://www.w3schools.com/howto/howto_css_social_media_buttons.asp-->
+        </div>
+        </footer>
+    </div>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("main-menu");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
+</body>
+</html>
