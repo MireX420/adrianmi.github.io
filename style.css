@@ -283,7 +283,7 @@ main#cms-site p{
 
 
 /*UU vs SEO side*/
-main#uu-vs-seo-site h3{
+main#uu-vs-seo-site h2{
     color: white;
     text-align: center;
     font-size: 1.6rem;
@@ -334,13 +334,13 @@ div#uu-grid div.box-2{
     justify-content: center;
     align-items: center;
 }
-h2.uu-boxes{
+h3.uu-boxes{
     font-size: 1.6rem;
     margin: 0;
     color: black;
     font-style: normal;
 }
-h2.uu-boxes-1{
+h3.uu-boxes-1{
     font-size: 1.6rem;
     margin: 0;
     color: white;
@@ -531,7 +531,6 @@ input#submit:hover{
         width: 20rem;
         word-wrap: break-word;
     }
-
     /*tok inspirasjon fra de forrige forelesningene*/
 }
 @media only screen and (max-width:500px) {
@@ -560,13 +559,13 @@ input#submit:hover{
     iframe{
         width: 20rem;
     }
-    h2.uu-boxes{
+    h3.uu-boxes{
         font-size: 1rem;
         margin: 0;
         color: black;
         font-style: normal;
     }
-    h2.uu-boxes-1{
+    h3.uu-boxes-1{
         font-size: 1.2rem;
         margin: 0;
         color: white;
@@ -578,7 +577,7 @@ input#submit:hover{
     
 }
 @media only screen and (max-width:320px){
-    h2.uu-boxes{
+    h3.uu-boxes{
         font-size: 1rem;
     }
 }
