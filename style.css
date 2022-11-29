@@ -97,13 +97,13 @@ main#index-site article img{
     height: auto;
     border-radius: 20px 20px 0 0;
 }
-main#index-site article h4{
+main#index-site article h3{
     font-size: 1.2rem;
     color: white;
     margin: 1rem 0 0 1rem;
     padding: 0;
 }
-main#index-site article h3{
+main#index-site article h4{
     font-size: 1.6rem;
     color: white;
     margin: 1rem 0 0 1rem;
