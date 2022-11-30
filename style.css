@@ -388,6 +388,14 @@ img.contrast-img{
     width: 40%;
     height: auto;
 }
+#analyze-links{
+    margin-bottom: 1rem;
+}
+#analyze-links a{
+    color:rgb(173, 173, 173);
+    text-decoration: none;
+    font-size: 1rem;
+}
 div#analyze-grid{
     display: flex;
     background-color: rgb(255, 255, 255);
@@ -445,7 +453,7 @@ a.rule-form{
     color:rgb(173, 173, 173);
     text-decoration: underline;
     text-underline-offset: 0.6rem;
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 
 
