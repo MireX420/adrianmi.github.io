@@ -441,6 +441,12 @@ h5.analyze-boxes-1{
 img.pre-post{
     width: 100%;
 }
+a.rule-form{
+    color:rgb(173, 173, 173);
+    text-decoration: underline;
+    text-underline-offset: 0.6rem;
+    font-size: 2rem;
+}
 
 
 
