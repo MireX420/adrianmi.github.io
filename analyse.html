@@ -60,8 +60,63 @@
                 
             </nav>
         </header>
-        <main>
-            <h3>All testing ble gjort på et inkognioto vindu for å minimalisere ulemper skapt av chrome extentions</h3>
+        <main class="analyze-site">
+            <article>
+                <h3>Analyse</h3>
+                <img src="bildebank/analyse-bilde.WebP" alt="">
+                <p>Dette er en analyse av nettstedet, den tar for seg de viktigste problemene som oppsto under Lighthouse analyse,
+                    en Webaim evaluering som tar for seg SEO og UU, en tabell med endringene jeg gjorde på nettsidene, en heuristisk 
+                    evaluering og en tilgjengelighetserklæring.</p>
+                <h4>Lighthouse</h4>
+                <img class="pre-spec" src="bildebank/Hjemmeside-pre-spec.WebP" alt="bilde av specs før endringer">
+                <p>Slik ser resultatene fra hjemmesidens første analyse på mobil. Det største problemet jeg møtte var at bildene var i en veldig 
+                    dårlig format (jpg), hvor jeg endret de til WebP som er mye bedre egnet for nettsider. Dette problemet løste performance på 
+                    alle sidene, både på mobil og desktop. Deretter møtte jeg på et Accessibility problem som var at en iframe tag ikke hadde «title». 
+                    I tillegg lå det problem i at headingene ikke var sequentially-descending, altså h1 til h2 osv.</p>
+                <img src="bildebank/meta.WebP" alt="bilde av meta tags">
+                <p>I SEO fikk jeg opp «Document does not have a meat a description» som enkelt kunne fikses ved å skrive:</p> 
+                <img src="bildebank/Hjemmeside-post-spec.WebP" alt="bilde av specs etter endringer">
+                <p>Etter å ha fikset opp de fleste feilene, får jeg nesten 100% på alle metrics-ene også på de andre sidene.</p>
+                <h4>WebAIM Evaluering</h4>
+                <img src="bildebank/webaim.WebP" alt="bilde av webaim res">
+                <p>Webaim sier oss mye om SEO og UU-en til nettsiden min. 0 kontrast feil tyder på god UU med tanke på
+                     at alt er lesbart. Mange struktur elementer som er i korrekt semantisk rekkefølge gir god SEO og viser også at siden er fint strukturert.</p>
+                <img class="contrast-img" src="bildebank/contrast.WebP" alt="bilde av webaim kontrast">
+                <p>På bildet ser man at kontrasten mellom bakgrunn og teksten til de minst lesbare linkene fortsatt passer alle krav.</p>
+                <img src="bildebank/features.WebP" alt="bilde av webaim features">
+                <p>Alt tekst for bilder samt meta språk tag hjelper til med SEO</p>
+                <h4>Heuristisk Evaluering</h4>
+                <img src="bildebank/cms.WebP" alt="bilde av cms">
+                <p>Heuristisk evaluering tar utgangspunkt fra 10 ulike prinsipper. Disse er tommelfinger-regler og ikke spesifikke retningslinjer. 
+                    F.eks. basert på prinsipp 1, som handler om å informere brukeren hvor den er, har jeg titler over alle innholdsidene som informerer.
+                    Ifølge prinnsipp 3, trenger brukerer en enkel og klar måte å komme seg ut av steder de med uhell gikk inn. Logoen til nettsiden min
+                    har den funksjonen, at det er en liten reddningsknapp </p>
+                <p>Konsistens og standarder er viktig for at brukeren skal vite at de ikke har sporet av, derfor er nettsiden min nesten prikk lik på alle sidene. Snarveier for de erfarende brukerene gjør at siden min blir mer fleksibel og tar for seg prinsipp 7. Disse snarveiene kan være den litt skjulte "kontakt oss" 
+                    knappen. Prinsipp 8 sier at grensesnitt burde ikke ha irelevant inhold eller innhold som blir lite brukt. Derfor er siden min minimalistist
+                    og har kun de viktigste elementene.
+                </p>
+                <div id="analyze-grid">
+                    <div class="analyze-box-1"><h5 class="analyze-boxes-1"><i class="fa-sharp fa-solid fa-table"></i></h5></div>
+                    <div class="analyze-box-2"><h5 class="analyze-boxes-1">Før</h5></div>
+                    <div class="analyze-box-2"><h5 class="analyze-boxes-1">Etter</h5></div>
+                    <div class="analyze-box-1"><h5 class="analyze-boxes-1">Lighthouse</h5></div>
+                    <div><h5 class="analyze-boxes"><img class="pre-post" src="bildebank/Hjemmeside-pre-spec.WebP" alt="bilde av specs før endringer"></h5></div>
+                    <div><h5 class="analyze-boxes"><img class="pre-post" src="bildebank/Hjemmeside-post-spec.WebP" alt="bilde av specs etter endringer"></h5></div>
+                    <div class="analyze-box-1"><h5 class="analyze-boxes-1">Format</h5></div>
+                    <div><h5 class="analyze-boxes">eksempel-bilde.jpg</h5></div>
+                    <div><h5 class="analyze-boxes">eksempel-bilde.WebP</h5></div>
+                    <div class="analyze-box-1"><h5 class="analyze-boxes-1">Desc-tag</h5></div>
+                    <div><h5 class="analyze-boxes">"N/A"</h5></div>
+                    <div><h5 class="analyze-boxes">meta name="description" content="This is the analyze-page."</h5></div>
+                    <div class="analyze-box-1"><h5 class="analyze-boxes-1">iframe title</h5></div>
+                    <div><h5 class="analyze-boxes">iframe class="facebook-share" src="...</h5></div>
+                    <div><h5 class="analyze-boxes">iframe title="facebook-share" class="facebook-share" src="...</h5></div>
+                    <div class="analyze-box-1"><h5 class="analyze-boxes-1">Riktig headers</h5></div>
+                    <div><h5 class="analyze-boxes">h1->h4->h2-h3</h5></div>
+                    <div><h5 class="analyze-boxes">h1->h2->h3->h4</h5></div>
+                </div>
+                <a href="C:\Users\adria\OneDrive\Dokumenter\Webutvikling\Deleksamen-3\tilgjengelighetserklæring.pdf">tilgjengelighetserklæring.pdf</a>
+            </article> 
         </main>
         <footer>
             <div class="socials-links">
