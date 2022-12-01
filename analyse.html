@@ -74,7 +74,7 @@
                     alle sidene, både på mobil og desktop. Deretter møtte jeg på et Accessibility problem som var at en iframe tag ikke hadde «title». 
                     I tillegg lå det problem i at headingene ikke var sequentially-descending, altså h1 til h2 osv.</p>
                 <img class="analyze-pic-2" src="bildebank/meta.WebP" alt="bilde av meta tags">
-                <p>Andre feil var at printerest share knappen hadde for dårlig kontrast til bakgrunnen, fikset dette ved å endre color til svart. I SEO fikk jeg opp «Document does not have a meat a description» som enkelt kunne fikses ved å skrive:</p> 
+                <p>Andre feil var at printerest share knappen hadde for dårlig kontrast til bakgrunnen, fikset dette ved å endre color til svart. Det var en ikke crawable link i hamburgermenyen, som jeg fikset ved å bytte javascript(0); til #. I SEO fikk jeg opp «Document does not have a meat a description» som enkelt kunne fikses ved å skrive:</p> 
                 <img class="analyze-pic-3" src="bildebank/Hjemmeside-post-spec.WebP" alt="bilde av specs etter endringer">
                 <p>Etter å ha fikset opp de fleste feilene, får jeg nesten 100% på alle metrics-ene også på de andre sidene.</p>
                 <h3>WebAIM Evaluering</h3>
@@ -105,19 +105,19 @@
                     <div class="analyze-box-1"><i class="fa-sharp fa-solid fa-table"></i></div>
                     <div class="analyze-box-2"><h5 class="analyze-boxes-1">Før</h5></div>
                     <div class="analyze-box-2"><h5 class="analyze-boxes-1">Etter</h5></div>
-                    <div class="analyze-box-1"><h5 class="analyze-boxes-1">Lighthouse</h5></div>
+                    <div class="analyze-box-1"><h5 class="analyze-boxes-2">Lighthouse</h5></div>
                     <div><h5 class="analyze-boxes"><img class="pre-post" src="bildebank/Hjemmeside-pre-spec.WebP" alt="bilde av specs før endringer"></h5></div>
                     <div><h5 class="analyze-boxes"><img class="pre-post" src="bildebank/Hjemmeside-post-spec.WebP" alt="bilde av specs etter endringer"></h5></div>
-                    <div class="analyze-box-1"><h5 class="analyze-boxes-1">Format</h5></div>
+                    <div class="analyze-box-1"><h5 class="analyze-boxes-2">Format</h5></div>
                     <div><h5 class="analyze-boxes">eksempel-bilde.jpg</h5></div>
                     <div><h5 class="analyze-boxes">eksempel-bilde.WebP</h5></div>
-                    <div class="analyze-box-1"><h5 class="analyze-boxes-1">Desc-tag</h5></div>
+                    <div class="analyze-box-1"><h5 class="analyze-boxes-2">Desc-tag</h5></div>
                     <div><h5 class="analyze-boxes">"N/A"</h5></div>
                     <div><h5 class="analyze-boxes">meta name="description" content="This is the analyze-page."</h5></div>
-                    <div class="analyze-box-1"><h5 class="analyze-boxes-1">iframe title</h5></div>
+                    <div class="analyze-box-1"><h5 class="analyze-boxes-2">iframe title</h5></div>
                     <div><h5 class="analyze-boxes">iframe class="facebook-share" src="...</h5></div>
                     <div><h5 class="analyze-boxes">iframe title="facebook-share" class="facebook-share" src="...</h5></div>
-                    <div class="analyze-box-1"><h5 class="analyze-boxes-1">Riktig headers</h5></div>
+                    <div class="analyze-box-1"><h5 class="analyze-boxes-2">Headers</h5></div>
                     <div><h5 class="analyze-boxes">h1->h4->h2-h3</h5></div>
                     <div><h5 class="analyze-boxes">h1->h2->h3->h4</h5></div>
                 </div>

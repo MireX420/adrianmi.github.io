@@ -99,7 +99,6 @@ main#index-site article img{
     height: auto;
     border-radius: 20px 20px 0 0;
 }
-
 main#index-site article h3{
     font-size: 1.2rem;
     color: white;
@@ -176,9 +175,7 @@ footer{
     font-size: 12px;
 }
 h2{
-    margin: auto;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin: 1rem;
     text-align: center;
     color: white;
     font-style: italic;
@@ -370,6 +367,15 @@ h3.uu-boxes-1{
     color: white;
     font-style: normal;
 }
+h3.uu-boxes-2{
+    font-size: 1.6rem;
+    margin: 0;
+    color: white;
+    font-style: normal;
+}
+.fa-table{
+    color: white;
+}
 
 
 
@@ -448,6 +454,7 @@ div#analyze-grid div.analyze-box-1{
     color: white;
     font-size: 2rem;
 }
+
 div#analyze-grid div.analyze-box-1 i{
     font-size: 3rem;
 }
@@ -466,6 +473,12 @@ h5.analyze-boxes{
     font-style: normal;
 }
 h5.analyze-boxes-1{
+    font-size: 1.6rem;
+    margin: 0;
+    color: rgb(255, 255, 255);
+    font-style: normal;
+}
+h5.analyze-boxes-2{
     font-size: 1.6rem;
     margin: 0;
     color: rgb(255, 255, 255);
@@ -561,11 +574,7 @@ input#submit:hover{
         display: none;   
         flex-direction: column;
     }
-    #CMSPic{
-        margin-left: 10%;
-        width: 80%;
-        margin-top: 2rem;
-    }
+   
     main#cms-site article{
         width: 80%;
        
@@ -721,6 +730,14 @@ input#submit:hover{
         color: white;
         font-style: normal;
     }
+    h3.uu-boxes-2 {
+        font-size: 1.2rem;
+        margin: 0;
+        color: white;
+        font-style: normal;
+        writing-mode: vertical-rl;
+        text-orientation:mixed;
+    }
     .facebook-share{
         width: 4rem;
         margin-right: 0.4rem;
@@ -732,21 +749,40 @@ input#submit:hover{
         font-size: 1rem;
     }
     h5.analyze-boxes-1{
-        font-size: 1.2rem;
+        font-size: 2rem;
         margin: 0;
         color: rgb(255, 255, 255);
         font-style: normal;
         word-break: break-all;
     }
-    
-    
+    h5.analyze-boxes-2{
+        font-size: 1.6rem;
+        margin: 0;
+        color: rgb(255, 255, 255);
+        font-style: normal;
+        writing-mode: vertical-rl;
+        text-orientation:mixed;
+    }
+    .socials-links a{
+        font-size: 2rem;
+    }
+ 
+}
+@media only screen and (max-width:375px){
+    h5.analyze-boxes{
+        width: 100%;
+        word-wrap: break-word;
+    }
+    h3.uu-boxes{
+        font-size: 0.8rem;
+    }
+
 }
 @media only screen and (max-width:320px){
     h3.uu-boxes{
         font-size: 0.8rem;
     }
     h3.uu-boxes-1 {
-        font-size: 1rem;
         margin: 0;
         color: white;
         font-style: normal;
@@ -762,5 +798,8 @@ input#submit:hover{
         text-decoration: underline;
         text-underline-offset: 0.6rem;
         font-size: 1.2rem;
+    }
+    h5.analyze-boxes-1{
+        font-size: 2rem;
     }
 }
