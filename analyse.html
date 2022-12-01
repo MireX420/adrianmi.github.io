@@ -68,16 +68,20 @@
                     evaluering og en tilgjengelighetserklæring.</p>
                 <h3>Lighthouse</h3>
                 <img class="pre-spec" src="bildebank/Hjemmeside-pre-spec.WebP" alt="bilde av specs før endringer">
-                <p>Slik ser resultatene fra hjemmesidens første analyse på mobil. Det største problemet jeg møtte var at bildene var i en veldig 
+                <p>Dette er resulatetene fra en analyse av analyse siden før noen endringer ble gjort. Siden hadde få problemer, men de få problemene skapte mye trøbbel.
+                    Performance var på 71, Accessibility var på 85, Best Pratices var på 92 og SEO lå på 83. Videre i artikkelen viser jeg hvordan jeg løste disse problemene.
+                </p>
+                <img src="bildebank/link.WebP" alt="bilde av link problem">
+                <p> Det største problemet jeg møtte var at bildene var i en veldig 
                     dårlig format (jpg), hvor jeg endret de til WebP som er mye bedre egnet for nettsider. Dette problemet løste performance på 
                     alle sidene, både på mobil og desktop. Deretter møtte jeg på et Accessibility problem som var at en iframe tag ikke hadde «title». 
-                    I tillegg lå det problem i at headingene ikke var sequentially-descending, altså h1 til h2 osv.</p>
-                <img src="bildebank/link.WebP" alt="bilde av link problem">
-                <p>Lå et problem i at linkene til sosiale medier og linken til hamburgermenyen ikke hadde navn. Fikset dette ved å bruke aria-label tag.</p>
+                    I tillegg lå det problem i at headingene ikke var sequentially-descending, altså h1 til h2 osv. Det lå et problem i at linkene til sosiale medier og linken til hamburgermenyen ikke hadde navn. Fikset dette ved å bruke aria-label tag.</p>
                 <img class="analyze-pic-2" src="bildebank/meta.WebP" alt="bilde av meta tags">
                 <p>Andre feil var at printerest share knappen hadde for dårlig kontrast til bakgrunnen, fikset dette ved å endre color til svart. Det var en ikke crawable link i hamburgermenyen, som jeg fikset ved å bytte javascript(0); til #. I SEO fikk jeg opp «Document does not have a meat a description» som enkelt kunne fikses ved å skrive:</p> 
                 <img class="analyze-pic-3" src="bildebank/Hjemmeside-post-spec.WebP" alt="bilde av specs etter endringer">
-                <p>Etter å ha fikset opp de fleste feilene, får jeg nesten 100% på alle metrics-ene også på de andre sidene.</p>
+                <p>Etter å ha fikset opp de fleste feilene, får jeg nesten 100% på alle metrics-ene også på de andre sidene. Merk at analysene ble gjort på en inkognito nettleser for å unngå extensions problemer.
+                    Disse resulatetene beviser at siden er godt utformet og har god SEO.
+                </p>
                 <h3>WebAIM Evaluering</h3>
                 <img src="bildebank/webaim2.WebP" alt="bilde av webaim res">
                 <p>Etter en WebAIM evaluering på Analyse siden, viser null errors, null contrast error, tre alerts som vi ikke trenger å bry oss om.
@@ -88,7 +92,7 @@
                 <img class="contrast-img" src="bildebank/contrast.WebP" alt="bilde av webaim kontrast">
                 <img src="bildebank/features.WebP" alt="bilde av webaim features">
                 <p>En undersøkelse av nettsiden med kontrastverktøyet viser at side oppfylle alle krav for kontrast. Selv de minste "link" tekstene er veldig lesbare. Det er viktig å ha 
-                    tydelig og lesbar tekst for det forbedrer UU og gjør siden mer vennelig for folk med synsvansker. Alt-tekst er bra å ha hvis bilder ikke laster opp og gir enda mulighet til å tolke bildet via tekst.
+                    tydelig og lesbar tekst for det forbedrer UU og gjør siden mer vennelig for folk med synsvansker. Alt-tekst er bra å ha hvis bilder ikke laster opp og gir enda mulighet til å tolke bildet via text-to-speech.
                     Meta språk tagen bidrar også til bedre SEO.
                 </p>
                 <h3>Heuristisk Evaluering</h3>
@@ -155,7 +159,7 @@
             <div class="share-links">
                 <iframe title="facebook-share" class="facebook-share" src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fitstud.hiof.no%2F~adrianmi%2FDeleksamen-4%2Fuu-vs-seo.html&layout=button_count&size=small&width=77&height=20&appId" width="77" height="20" style="border:none;overflow:hidden" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
                 <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                <a class="print-share" href="#"><i class="fa-brands fa-square-pinterest"></i> Share</a>
+                <a class="print-share" href="#"><i class="fa-brands fa-square-pinterest"> Share</i></a>
                 <!--https://publish.twitter.com/#-->
                 <!--https://developers.facebook.com/docs/plugins/share-button/-->
             </div>
