@@ -72,26 +72,33 @@
                     dårlig format (jpg), hvor jeg endret de til WebP som er mye bedre egnet for nettsider. Dette problemet løste performance på 
                     alle sidene, både på mobil og desktop. Deretter møtte jeg på et Accessibility problem som var at en iframe tag ikke hadde «title». 
                     I tillegg lå det problem i at headingene ikke var sequentially-descending, altså h1 til h2 osv.</p>
+                <img src="bildebank/link.WebP" alt="bilde av link problem">
+                <p>Lå et problem i at linkene til sosiale medier og linken til hamburgermenyen ikke hadde navn. Fikset dette ved å bruke aria-label tag.</p>
                 <img class="analyze-pic-2" src="bildebank/meta.WebP" alt="bilde av meta tags">
                 <p>Andre feil var at printerest share knappen hadde for dårlig kontrast til bakgrunnen, fikset dette ved å endre color til svart. Det var en ikke crawable link i hamburgermenyen, som jeg fikset ved å bytte javascript(0); til #. I SEO fikk jeg opp «Document does not have a meat a description» som enkelt kunne fikses ved å skrive:</p> 
                 <img class="analyze-pic-3" src="bildebank/Hjemmeside-post-spec.WebP" alt="bilde av specs etter endringer">
                 <p>Etter å ha fikset opp de fleste feilene, får jeg nesten 100% på alle metrics-ene også på de andre sidene.</p>
                 <h3>WebAIM Evaluering</h3>
-                <img src="bildebank/webaim.WebP" alt="bilde av webaim res">
-                <p>Webaim sier oss mye om SEO og UU-en til nettsiden min. 0 kontrast feil tyder på god UU med tanke på
-                     at alt er lesbart. Mange struktur elementer som er i korrekt semantisk rekkefølge gir god SEO og viser også at siden er fint strukturert.</p>
+                <img src="bildebank/webaim2.WebP" alt="bilde av webaim res">
+                <p>Etter en WebAIM evaluering på Analyse siden, viser null errors, null contrast error, tre alerts som vi ikke trenger å bry oss om.
+                    evalueringen viser også 11 Features som er alt-tekst og language meta tag. 32 stryctural elements er bare antall semantiske elementer jeg brukte, sånn som Header, Footer og Navigation. 
+                    9 aria sier at jeg har 9 labels på linker. Oppsummert scorerer denne siden greit, null errors og aria bidrar til SEO ved å beskrive elementene til pcer. Null kontrast feil og alt-tekst gjør
+                    siden enklere å leses, som samtidig gir god UU.
+                </p>
                 <img class="contrast-img" src="bildebank/contrast.WebP" alt="bilde av webaim kontrast">
-                <p>På bildet ser man at kontrasten mellom bakgrunn og teksten til de minst lesbare linkene fortsatt passer alle krav.</p>
                 <img src="bildebank/features.WebP" alt="bilde av webaim features">
-                <p>Alt tekst for bilder samt meta språk tag hjelper til med SEO</p>
+                <p>En undersøkelse av nettsiden med kontrastverktøyet viser at side oppfylle alle krav for kontrast. Selv de minste "link" tekstene er veldig lesbare. Det er viktig å ha 
+                    tydelig og lesbar tekst for det forbedrer UU og gjør siden mer vennelig for folk med synsvansker. Alt-tekst er bra å ha hvis bilder ikke laster opp og gir enda mulighet til å tolke bildet via tekst.
+                    Meta språk tagen bidrar også til bedre SEO.
+                </p>
                 <h3>Heuristisk Evaluering</h3>
                 <img class="analyze-pic-4" src="bildebank/cms.WebP" alt="bilde av cms">
                 <p>Heuristisk evaluering tar utgangspunkt fra 10 ulike prinsipper. Disse er tommelfinger-regler og ikke spesifikke retningslinjer. 
-                    F.eks. basert på prinsipp 1, som handler om å informere brukeren hvor den er, har jeg titler over alle innholdsidene som informerer.
-                    Ifølge prinnsipp 3, trenger brukerer en enkel og klar måte å komme seg ut av steder de med uhell gikk inn. Logoen til nettsiden min
-                    har den funksjonen, at det er en liten reddningsknapp </p>
-                <p>Konsistens og standarder er viktig for at brukeren skal vite at de ikke har sporet av, derfor er nettsiden min nesten prikk lik på alle sidene. Snarveier for de erfarende brukerene gjør at siden min blir mer fleksibel og tar for seg prinsipp 7. Disse snarveiene kan være den litt skjulte "kontakt oss" 
-                    knappen. Prinsipp 8 sier at grensesnitt burde ikke ha irelevant inhold eller innhold som blir lite brukt. Derfor er siden min minimalistist
+                    F.eks. basert på prinsipp 1, som handler om å informere brukeren hvor den er, har jeg titler over alle innholdsidene som informerer dem nøyakitg hvor de er (bilde ovenfor).
+                    Ifølge prinnsipp 3, trenger brukerer en enkel og klar måte å komme seg ut av steder de med uhell gikk inn i. Logoen til nettsiden min
+                    har den funksjonen, den fungerer som en liten reddningsknapp.</p>
+                <p>Konsistens og standarder er viktig for at brukeren skal vite at de ikke har sporet av til en annen nettside, derfor er nettsiden min nesten prikk lik på alle sidene for å indikere at man er på samme side. Snarveier for de erfarende brukerene gjør at siden min blir mer fleksibel og tar for seg prinsipp 7. Disse snarveiene kan være den litt skjulte "kontakt oss" 
+                    knappen. Prinsipp 8 sier at grensesnitt burde ikke ha irelevant innhold eller innhold som blir lite brukt. Derfor er siden min minimalistist
                     og har kun de viktigste elementene.
                 </p>
                 <div id="analyze-links"> 
@@ -119,8 +126,16 @@
                     <div class="analyze-box-1"><h5 class="analyze-boxes-2">Headers</h5></div>
                     <div><h5 class="analyze-boxes">h1->h4->h2-h3</h5></div>
                     <div><h5 class="analyze-boxes">h1->h2->h3->h4</h5></div>
-                </div>
+                    <div class="analyze-box-1"><h5 class="analyze-boxes-2">Lenker uten navn</h5></div>
+                    <div><h5 class="analyze-boxes">lenker til sosiale medier og hamburgermeny mangler navn</h5></div>
+                    <div><h5 class="analyze-boxes">lagt til aria-label tag</h5></div>
+                    <div class="analyze-box-1"><h5 class="analyze-boxes-2">Meny uten navn</h5></div>
+                    <div><h5 class="analyze-boxes">linken til hamburgermenyen mangler navn</h5></div>
+                    <div><h5 class="analyze-boxes">lagt til aria-label tag</h5></div>
+                </div> 
                 <a class="rule-form" href="tilgjengelighetserklæring.pdf">tilgjengelighetserklæring.pdf</a>
+                <a class="to-top" href="#">Til Toppen</a>
+                </div>
             </article> 
         </main>
         <footer>
@@ -135,11 +150,12 @@
                 <a href="https://no.pinterest.com/" aria-label="link til printerest"><i class="fa-brands fa-square-pinterest"></i></a>
                 <!--https://www.wikihow.com/Create-an-Email-Link-in-HTML-->
                 <!--https://www.w3schools.com/howto/howto_css_social_media_buttons.asp-->
+                <!--https://dequeuniversity.com/rules/axe/4.4/link-name?utm_source=lighthouse&utm_medium=devtools-->
             </div>
             <div class="share-links">
                 <iframe title="facebook-share" class="facebook-share" src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fitstud.hiof.no%2F~adrianmi%2FDeleksamen-4%2Fuu-vs-seo.html&layout=button_count&size=small&width=77&height=20&appId" width="77" height="20" style="border:none;overflow:hidden" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
                 <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                <a class="print-share" href="#"><i class="fa-brands fa-square-pinterest"> share</i></a>
+                <a class="print-share" href="#"><i class="fa-brands fa-square-pinterest"></i> Share</a>
                 <!--https://publish.twitter.com/#-->
                 <!--https://developers.facebook.com/docs/plugins/share-button/-->
             </div>
