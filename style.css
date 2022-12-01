@@ -738,6 +738,7 @@ input#submit:hover{
         writing-mode: vertical-rl;
         text-orientation:mixed;
     }
+    /*https://developer.mozilla.org/en-US/docs/Web/CSS/text-orientation*/
     .facebook-share{
         width: 4rem;
         margin-right: 0.4rem;
